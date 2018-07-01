@@ -15,4 +15,6 @@
     <string name="location">Location</string>
     <string name="sort">Sort</string>
     <string name="sort1">Sort</string>
+    <string name="importance_level">Importance level</string>
+    <string name="current_progress">Current Progress</string>
 </resources>
