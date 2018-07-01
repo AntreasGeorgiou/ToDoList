@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CyRicSimpleToDoList</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="map">Map</string>
+    <string name="current_state">Current State</string>
+    <string name="importance_state">Importance State</string>
+    <string name="add_a_new_to_do_item">Add a new to-do item</string>
+    <string name="my_to_do_list">My To-Do List</string>
+    <string name="description">Description</string>
+    <string name="clear">Clear</string>
+    <string name="update">Update</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="location">Location</string>
+    <string name="sort">Sort</string>
+    <string name="sort1">Sort</string>
+</resources>

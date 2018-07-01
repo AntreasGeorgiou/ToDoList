@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/my_to_do_list"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignBottom="@+id/lblTitle"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort1"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/spSort"
+        />
+    <!--android:hint="Sort"-->
+</LinearLayout>
+
+    <ListView
+        android:id="@+id/lvItems"
+        android:layout_width="wrap_content"
+        android:layout_height="459dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="52dp" />
+
+    <EditText
+        android:id="@+id/Description"
+        android:layout_width="119dp"
+        android:layout_height="59dp"
+        android:layout_above="@+id/btnAddItem"
+        android:layout_alignParentStart="true"
+        android:hint="@string/description"
+        android:visibility="invisible"
+        android:inputType="text" />
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/ImportanceState"
+        android:layout_width="82dp"
+        android:layout_height="59dp"
+        android:layout_alignTop="@+id/Description"
+        android:layout_toEndOf="@+id/Description"
+        android:hint="@string/importance_state"
+        android:textSize="12sp"
+        android:visibility="invisible"/>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/CurrentState"
+        android:layout_width="78dp"
+        android:layout_height="59dp"
+        android:layout_alignTop="@+id/Description"
+        android:layout_toEndOf="@+id/ImportanceState"
+        android:hint="@string/current_state"
+        android:textSize="12sp"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/txtLocation"
+        android:layout_width="119dp"
+        android:layout_height="59dp"
+        android:layout_alignTop="@+id/Description"
+        android:layout_toEndOf="@+id/CurrentState"
+        android:hint="@string/location"
+        android:inputType="text"
+        android:visibility="invisible" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_a_new_to_do_item"
+        android:id="@+id/btnAddItem"
+        android:layout_alignParentBottom="true"
+        android:onClick="AddItem"
+        android:visibility="invisible"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        android:id="@+id/btnUpdate"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        />
+
+
+
+</RelativeLayout>

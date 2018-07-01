@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:leftEdgeSwipeOffset="162dp">
+    <LinearLayout
+        android:layout_width="162dp"
+        android:layout_height="54dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageButton
+            android:id="@+id/imgEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:background="@color/transparent"
+            />
+        <ImageButton
+            android:id="@+id/imgDelete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:background="@color/transparent"/>
+        <ImageButton
+            android:id="@+id/imgLoc"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_location_on_black_24dp"
+            android:background="@color/transparent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtDescr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignBottom="@id/txtDescr"
+            android:weightSum="3">
+        <TextView
+            android:id="@+id/txtImport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txtCurr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+          />
+
+        <TextView
+            android:id="@+id/txtLoca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</com.daimajia.swipe.SwipeLayout>
