@@ -114,6 +114,8 @@ public class MainActivity extends AppCompatActivity {
             MaterialBetterSpinner betterSpinner= findViewById(R.id.ImportanceState);
             MaterialBetterSpinner betterSpinner2= findViewById(R.id.CurrentState);
             EditText txtDesc = findViewById(R.id.Description);
+            final EditText txtLoca= findViewById(R.id.txtLocation);
+
             Button btnAdd = findViewById(R.id.btnAddItem);
             Button btnUpdate = findViewById(R.id.btnUpdate);
             btnUpdate.setVisibility(View.INVISIBLE);
@@ -121,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
             betterSpinner2.setVisibility(View.INVISIBLE);
             txtDesc.setVisibility(View.INVISIBLE);
             btnAdd.setVisibility(View.INVISIBLE);
+            txtLoca.setVisibility(View.INVISIBLE);
+
             items.clear();
             itemsAdapter.notifyDataSetChanged();
             Toast.makeText(MainActivity.this, "Cleared Successfully!", Toast.LENGTH_LONG).show();
